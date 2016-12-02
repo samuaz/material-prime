@@ -22,13 +22,13 @@ public class MaterialWidgetBuilder extends WidgetBuilder {
 
 		return wb;
 	}
+        
     
     public MaterialWidgetBuilder(FacesContext context) {
         super(context);
     }
 
     protected WidgetBuilder init(String widgetClass, String widgetVar, String id, String resourcePath, boolean endFunction) throws IOException {
-    	this.resourcePath = resourcePath;
     	this.endFunction = endFunction;
     	
         context.getResponseWriter().write("MaterialPrime.cw(\"");
@@ -48,4 +48,7 @@ public class MaterialWidgetBuilder extends WidgetBuilder {
 
         return this;
     }
+    
+   
+    
 }

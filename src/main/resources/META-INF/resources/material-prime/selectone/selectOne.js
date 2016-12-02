@@ -13,3 +13,7 @@ MaterialPrime.widget.SelectOne = PrimeFaces.widget.BaseWidget.extend({
 		});
 	}
 });
+
+  $(document).ready(function() {
+    $('select').material_select();
+  });

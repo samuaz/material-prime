@@ -66,7 +66,10 @@ public class RadioButtonRenderer extends InputRenderer {
 						writer.writeAttribute("name", inputId, null);
 						writer.writeAttribute("class", getInputClass(radioButton), null);
 						writer.writeAttribute("value", selectItem.getValue(), null);
-						writer.writeAttribute("checked", selectItem.getValue().equals(radioButton.getValue())? "checked" : "", null);
+					//writer.writeAttribute("checked", selectItem.getValue().equals(radioButton.getValue())? "checked" : "", null);
+                                        if (selectItem.getValue().equals(radioButton.getValue())) {
+                               writer.writeAttribute("checked", "checked" , null);
+                                         }
 					writer.endElement("input");	
 					writer.startElement("label", null);
 						writer.writeAttribute("for", inputId+i, null);

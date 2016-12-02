@@ -8,13 +8,15 @@ import org.primefaces.material.MaterialPrime;
 
 @ResourceDependencies({
 	@ResourceDependency(library = "primefaces", name = "jquery/jquery.js"),
-	@ResourceDependency(library = "primefaces", name = "primefaces.js"),
+        @ResourceDependency(library = "primefaces", name="core.js"),
+	@ResourceDependency(library = "primefaces", name="components.js"),
 	@ResourceDependency(library = "material-prime", name = "libs/materialize.css"),
 	@ResourceDependency(library = "material-prime", name = "libs/materialize.js"),
 	@ResourceDependency(library = "material-prime", name = "core/material-prime.js"),
 	@ResourceDependency(library = "material-prime", name = "core/material-prime.css"),
 	@ResourceDependency(library = "material-prime", name = "selectone/selectOne.js")
 })
+
 public class SelectOne extends SelectOneMenu{
 	public static final String COMPONENT_TYPE = "org.primefaces.material.component.SelectOne";
 	
